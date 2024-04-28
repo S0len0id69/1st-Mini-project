@@ -1,0 +1,243 @@
+.product-home {
+    min-height: 40vh;
+    width: 100%;
+    background: url(img/product.jpg);
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.product-women {
+    min-height: 40vh;
+    width: 100%;
+    background: url(img/women-product.jpg);
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.3rem;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.rating {
+    text-align: end;
+}
+
+.product-box {
+    position: relative;
+    transition: all 0.4s ease;
+    margin-bottom: 1rem;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.new-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.product-box {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.product-info h5 {
+    font-size: 8px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.product-box h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-box h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-box:hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-box:hover .m-1 {
+    content: url(img/men-products/men1.0.jpg);
+}
+
+.product-box:hover .m-2 {
+    content: url(img/men-products/men2.0.jpg);
+}
+
+.product-box:hover .m-3 {
+    content: url(img/men-products/men3.0.jpg);
+}
+
+.product-box:hover .m-4 {
+    content: url(img/men-products/men4.0.jpg);
+}
+
+
+.product-box:hover .m-s-1 {
+    content: url(img/men-products/men-short-1-0.jpg);
+}
+
+.product-box:hover .m-s-2 {
+    content: url(img/men-products/men-short-2-0.jpg);
+}
+
+.product-box:hover .m-s-3 {
+    content: url(img/men-products/men-short-3-0.jpg);
+}
+
+.product-box:hover .m-s-4 {
+    content: url(img/men-products/men-short-4-0.jpg);
+}
+
+
+.product-box:hover .m-j-1 {
+    content: url(img/men-products/men-joggers-1-0.jpg);
+}
+
+.product-box:hover .m-j-2 {
+    content: url(img/men-products/men-joggers-2-0.jpg);
+}
+
+.product-box:hover .m-j-3 {
+    content: url(img/men-products/men-joggers-3-0.jpg);
+}
+
+.product-box:hover .m-j-4 {
+    content: url(img/men-products/men-joggers-4-0.jpg);
+}
+
+
+.product-box:hover .m-h-1 {
+    content: url(img/men-products/men-hoodie-1-0.jpg);
+}
+
+.product-box:hover .m-h-2 {
+    content: url(img/men-products/men-hoodie-2-0.jpg);
+}
+
+.product-box:hover .m-h-3 {
+    content: url(img/men-products/men-hoodie-3-0.jpg);
+}
+
+.product-box:hover .m-h-4 {
+    content: url(img/men-products/men-hoodie-4-0.jpg);
+}
+
+/* Women Product Sections */
+
+.product-box:hover .w-1 {
+    content: url(img/women-products/women-1-0.jpg);
+}
+
+.product-box:hover .w-2 {
+    content: url(img/women-products/women-2-0.jpg);
+}
+
+.product-box:hover .w-3 {
+    content: url(img/women-products/women-3-0.jpg);
+}
+
+.product-box:hover .w-4 {
+    content: url(img/women-products/women-4-0.jpg);
+}
+
+
+.product-box:hover .w-h-1 {
+    content: url(img/women-products/women-hoodie-1-0.jpg);
+}
+
+.product-box:hover .w-h-2 {
+    content: url(img/women-products/women-hoodie-2-0.jpg);
+}
+
+.product-box:hover .w-h-3 {
+    content: url(img/women-products/women-hoodie-3-0.jpg);
+}
+
+.product-box:hover .w-h-4 {
+    content: url(img/women-products/women-hoodie-4-0.jpg);
+}
+
+
+.product-box:hover .w-j-1 {
+    content: url(img/women-products/women-joggers-1-0.jpg);
+}
+
+.product-box:hover .w-j-2 {
+    content: url(img/women-products/women-joggers-2-0.jpg);
+}
+
+.product-box:hover .w-j-3 {
+    content: url(img/women-products/women-joggers-3-0.jpg);
+}
+
+.product-box:hover .w-j-4 {
+    content: url(img/women-products/women-joggers-4-0.jpg);
+}
+
+
+.product-box:hover .w-s-1 {
+    content: url(img/women-products/women-shirt-1-0.jpg);
+}
+
+.product-box:hover .w-s-2 {
+    content: url(img/women-products/women-shirt-2-0.jpg);
+}
+
+.product-box:hover .w-s-3 {
+    content: url(img/women-products/women-shirt-3-0.jpg);
+}
+
+.product-box:hover .w-s-4 {
+    content: url(img/women-products/women-shirt-4-0.jpg);
+}
+
+.new-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 30px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 10px 0;
+}

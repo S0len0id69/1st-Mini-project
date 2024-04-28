@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Login</title>
+        <link rel="stylesheet" href="login.css">
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"> -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Nunito">
+            <link rel="shortcut icon" type="image/x-icon" href="img/Footya.ico"/>
+    </head>
+
+    <body>
+        <!--logo-->
+        <header>
+            <a href="#" class="logo"><img class="img-logo" src="img/Footy.png" alt=""></a>
+      
+            <div class="header-icons">
+              <a href="index.html"><i class="bi bi-house"></i></a>
+            </div>
+          </header>
+
+        <!-- login form -->
+        <div class="form-wrapper">
+            <div class="form-content">
+                <h2 style="margin-bottom: 1em;">LOGIN</h2>
+                <form method="post" action="login.html">
+                    <div class="input-parent">
+                        <div class="input-field">
+                            <input type="text" required name="userGmail"
+                                id="gmail"> <label>Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required name="userPassword"
+                                id="password"> <label>Password</label>
+                            <div class="pass" onclick="togglePassword()">
+                                <span class="password-eye show-password"
+                                    data-toggle="tooltip" data-placement="top"
+                                    title="show password"></span> <span
+                                    class="password-eye hide-password hide"
+                                    data-toggle="tooltip" data-placement="top"
+                                    title="hide password"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="forgot-pass-link" class="btn">Forgot
+                        password?</a>
+                    <a href="logout.html" class="login-btn">Log In</a>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account? <a href="registeration.html"
+                        id="signup-link" class="login-btn">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <!--contact-->
+        <section class="contact" id="contact">
+            <div class="main-contact">
+                <h3>Footy Clothing</h3>
+                <h5>Let's Connect with Us</h5>
+                <div class="icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-threads"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+
+            <div class="main-contact">
+                <h3>Explore</h3>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#login">Login</a></li>
+            </div>
+
+            <div class="main-contact">
+                <h3>Our Services</h3>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Free Shipping</a></li>
+                <li><a href="#">Gift Cards</a></li>
+            </div>
+
+            <div class="main-contact">
+                <h3>Shopping</h3>
+                <li><a href="#">Clothing sotre</a></li>
+                <li><a href="#">Trending Shoes</a></li>
+                <li><a href="#">Acessories</a></li>
+                <li><a href="#">Sales</a></li>
+            </div>
+
+        </section>
+
+        <div class="last-text">
+            <p>Copyright © 2024 Footy Clothing. All rights reserved.</p>
+        </div>
+
+        <script src="auth.js"></script>
+        <script src="script.js"></script>
+
+    </html>

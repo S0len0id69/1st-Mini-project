@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footy Clothing Store</title>
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Footya.ico"/>
+    <style>
+        .wave-opcity {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-opcity svg {
+            position: relative;
+            display: block;
+            width: calc(108% + 1.3px);
+            height: 107px;
+            transform: rotateY(180deg);
+        }
+
+        .wave-opcity .shape-fill {
+            fill: #FFFFFF;
+        }
+
+
+        .book {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .book svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 52px;
+        }
+
+        .book .shape-fill {
+            fill: #0388FC;
+        }
+    </style>
+    <script src="about-us.js"></script>
+</head>
+
+<body onload="showSlides(1);">
+    <header>
+        <a href="#" class="logo"><img class="img-logo" src="img/Footy.png" alt=""></a>
+        <ul class="navlist">
+            <li><a href="logout.html">Home</a></li>
+            <li><a href="about-us-logout.html">About</a></li>
+            <li><a href="product-logout.html">Product</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <a href="#"><i class="bi bi-bag"></i></a>
+            <i class="bi bi-menu-button" id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!--about us part-->
+    <section class="intro-section">
+        <div class="aboutus">
+            <h1 class="thin" style="margin-bottom: 30px; font-weight: 100; font-size: 65px;">About Us</h1>
+        </div>
+        <div class="aboutus-img" style="background-image: url('img/about-us-jean.jpg');"></div>
+    </section>
+
+    <section class="intro-section">
+        <div class="aboutus blur-text">
+            <h2 class="underline-border thick">OUR MOTIVATION</h2>
+            <p class="mid_w mid_font">
+                The inspiration behind the collections at Footy Clothing
+                came from a rich tapestry of sources, weaving together our love for
+                fashion, culture, and community. Each season, she infused the store's offerings
+                with a fresh perspective while staying true to our core values of inclusivity,
+                sustainability, and creativity.</p>
+            <p class="mid_w mid_font">
+                Our passion for travel played a significant role in shaping the store's collections. Journeys
+                to places like Paris, Tokyo, and Marrakech allowed her to experience diverse fashion styles and textile
+                traditions. She incorporated these global influences into her designs, blending vibrant colors, unique
+                patterns, and intricate details into the clothing. This fusion of styles gave the store's collections a
+                distinctive and eclectic flair.
+            </p>
+        </div>
+        <div class="aboutus-img" style="background-image: url('img/about-clothes.jpg');"></div>
+    </section>
+
+    <section class="intro-section" style="background-image: url(img/sport-background2.jpg);">
+        <div class="aboutus">
+            <h2 class="underline-border thick">BENEFITS OF OUR STORE</h2>
+            <div class="about-us-advantages flex">
+                <div class="flex_col about-us-advantages-container">
+                    <div class="svg_icon" style="background-image: url(img/svgs/mention.svg);"></div>
+                    <h3 class="underline-border mid_w">Personalized Fit Guarantee</h3>
+                    <p class="thin sm_font">Our Personalized Fit Guarantee offers free alterations on all purchases,
+                        ensuring every customer gets a perfect, custom-like fit.</p>
+                </div>
+                <div class="flex_col about-us-advantages-container">
+                    <div class="svg_icon" style="background-image: url(img/svgs/diverse.svg);"></div>
+                    <h3 class="underline-border mid_w">Diverse Styles and Sizes</h3>
+                    <p class="thin sm_font">We embraced inclusivity with a wide range of styles and sizes, ensuring that
+                        everyone, regardless of age, gender, or body type, could find something that suited their
+                        personal style.</p>
+                </div>
+                <div class="flex_col about-us-advantages-container">
+                    <div class="svg_icon" style="background-image: url(img/svgs/leaf.svg);"></div>
+                    <h3 class="underline-border mid_w">Commitment to Sustainability</h3>
+                    <p class="thin sm_font">We are committed to sustainability by sourcing eco-friendly materials from
+                        ethical suppliers, ensuring that its clothing had a minimal environmental impact and supported
+                        fair labor practices.</p>
+                </div>
+                <div class="flex_col about-us-advantages-container">
+                    <div class="svg_icon" style="background-image: url(img/svgs/triangle.svg);"></div>
+                    <h3 class="underline-border mid_w">Unique and Local Designs</h3>
+                    <p class="thin sm_font">Customers could find pieces that were truly one-of-a-kind, inspired by
+                        diverse cultures and artistic expressions. </p>
+                </div>
+                <div class="flex_col about-us-advantages-container">
+                    <div class="svg_icon" style="background-image: url(img/svgs/calendar.svg);"></div>
+                    <h3 class="underline-border mid_w">Community Engagement and Events</h3>
+                    <p class="thin sm_font">Our store served as a community hub, hosting events like fashion shows,
+                        clothing swap parties, and sustainable fashion workshops, fostering connections and creating a
+                        warm, inviting atmosphere.</p>
+                </div>
+                <div class="flex_col about-us-advantages-container">
+                    <div class="svg_icon" style="background-image: url(img/svgs/chat.svg);"></div>
+                    <h3 class="underline-border mid_w">Knowledgeable and Friendly Staff</h3>
+                    <p class="thin sm_font">The staff here were fashion consultants, trained to be knowledgeable,
+                        friendly, and eager to help customers with everything from styling advice to finding the perfect
+                        outfit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="book">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="intro-section" style="background-color: var(--w-color);">
+        <div class="aboutus">
+            <h2 class="underline-border thick">Reviews form Our Precious Customers</h2>
+            <div class="flex card-collection" id="review">
+                <div class="card card-rating">
+                    <h3>A Trendy Find!</h3>
+                    <p>
+                        "I stumbled upon this clothing website while searching for a new wardrobe, and I'm so glad I
+                        did!
+                        The selection is amazing, with something for every style. I found a couple of trendy dresses
+                        that
+                        fit perfectly, and the quality exceeded my expectations. Shipping was quick, and everything was
+                        packaged with care. I'll definitely be a returning customer!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/abcd.jpg" class="profile">
+                            <div>Phyu Sin</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating">
+                    <h3>Fast Shipping and High Quality</h3>
+                    <p>
+                        "This website is fantastic! I ordered a few items for a trip, and they arrived in just a couple
+                        of days—much faster than I expected. The clothes are high quality and true to size, which is a
+                        relief. I loved the variety of options, and everything looked just like it did on the website. I
+                        can't wait to order more!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/hotaru.jpg" class="profile">
+                            <div>Hotaru</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating">
+                    <h3>Awesome Deals and Discounts</h3>
+                    <p>
+                        "I was looking for some new clothes without breaking the bank, and this website was perfect!
+                        They had some great deals and discounts, so I was able to get a lot for my money. I picked out a
+                        few tops and a pair of jeans, and they all fit perfectly. I even got a discount code for my next
+                        purchase. I'm really happy with my order, and I'll definitely be shopping here again!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/morax.jpg" class="profile">
+                            <div>Morax</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating">
+                    <h3>Stylish and Comfortable</h3>
+                    <p>
+                        "I've been on the hunt for comfortable yet stylish clothes, and this website delivered! The
+                        fabrics are soft, and the designs are just what I was looking for. I bought a couple of casual
+                        outfits for work-from-home days, and they've quickly become my favorites. The website is easy to
+                        navigate, and the checkout process was a breeze. Highly recommend!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/sid.jpg" class="profile">
+                            <div>Avyaan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating">
+                    <h3>A Wardrobe Game-Changer</h3>
+                    <p>
+                        "I can't say enough good things about this clothing website. I decided to revamp my wardrobe,
+                        and this site had everything I needed. From casual to formal wear, the selection was extensive.
+                        I found unique pieces that really matched my style, and they arrived promptly. The quality was
+                        impressive, and I've received so many compliments on my new outfits!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/someone.jpg" class="profile">
+                            <div>John</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating" id="test">
+                    <h3>Great Customer Service</h3>
+                    <p>
+                        "I had a great experience shopping on this website. I needed a dress for a wedding, but I wasn't
+                        sure about the size. I reached out to their customer service, and they were super helpful,
+                        guiding me through the measurements and helping me choose the right fit. The dress arrived on
+                        time, and it was exactly what I wanted. It made me feel beautiful on the big day!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/cel.jpg" class="profile">
+                            <div>Sidney</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating">
+                    <h3>Excellent Fit and Style</h3>
+                    <p>
+                        "Shopping online can be tricky with sizes, but this website got it just right! The size charts
+                        were accurate, and I had no problem finding clothes that fit me perfectly. I bought a mix of
+                        tops, pants, and a jacket, and they all fit like a glove. The styles were current, and I love
+                        that they offer a wide range of options. I'm already planning my next order!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/svgs/alt-user.svg" class="profile">
+                            <div>Anonymous</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating">
+                    <h3>Smooth Shopping Experience</h3>
+                    <p>
+                        "This website made shopping so easy! The interface is user-friendly, and I could quickly filter
+                        through categories to find what I wanted. The checkout process was seamless, and I received
+                        confirmation and tracking information right away. My package arrived sooner than expected, and I
+                        was delighted with everything. It's a stress-free way to shop for clothes online."
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/minan.jpg" class="profile">
+                            <div>Min An</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-rating" id="test">
+                    <h3>High-Quality Clothing at a Fair Price</h3>
+                    <p>
+                        "I was skeptical about buying clothes online, but this website changed my mind. The prices were
+                        reasonable, and the quality of the clothing was excellent. I bought a few items for work, and
+                        they looked professional and felt comfortable. It's hard to find a place that offers both
+                        quality and affordability, but this site did it. I highly recommend checking them out!"
+                    </p>
+                    <div class="flex" style="justify-content: space-around; width: 100%;">
+                        <div class="icon-star">
+                            <img src="img/svgs/star.svg" alt="Icon Star" /> 5 / 5
+                        </div>
+                        <div class="flex profile-section">
+                            <img src="img/profile/qian.jpg" class="profile">
+                            <div>Qian</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--next and prevvious arrows-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--For Dots Under Slide Show-->
+            <div style="text-align:center">
+                <a class="dot" onclick="changeSlide(1)"></a>
+                <a class="dot" onclick="changeSlide(2)"></a>
+                <a class="dot" onclick="changeSlide(3)"></a>
+            </div>
+        </div>
+        <div class="wave-opcity">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+
+    <!--brand moto and logo-->
+    <section class="brand">
+        <p class="description">Prepare to dominate the field and conquer every challenge with Footy: the ultimate
+            destination offering a comprehensive selection of premium sportswear designed to elevate your performance
+            and inspire greatness.</p>
+        <div class="brand-content">
+            <div class="main">
+                <img src="img/Footy.png" alt="">
+                <p class="slogan">Dare to take the next step</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--contact-->
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <h3>Footy Clothing</h3>
+            <h5>Let's Connect with Us</h5>
+            <div class="icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-threads"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+
+        <div class="main-contact">
+            <h3>Explore</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#login">Login</a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Our Services</h3>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Free Shipping</a></li>
+            <li><a href="#">Gift Cards</a></li>
+        </div>
+
+        <div class="main-contact">
+            <h3>Shopping</h3>
+            <li><a href="#">Clothing sotre</a></li>
+            <li><a href="#">Trending Shoes</a></li>
+            <li><a href="#">Acessories</a></li>
+            <li><a href="#">Sales</a></li>
+        </div>
+
+    </section>
+
+    <div class="last-text">
+        <p>Copyright © 2024 Footy Clothing. All rights reserved.</p>
+    </div>
+
+    <a href="#" class="top"><i class="bi bi-arrow-up-square"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</body>
+
+</html>
